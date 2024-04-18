@@ -36,9 +36,11 @@ def tcp_scan(dst_ip, dport):
             else:
                 print (f"A porta {dport} do host {dst_ip} está fechada mas o host está ativo")
                 print (f"Estatísticas: Protocolo {prot}, TTL {timetl}, Origem: {origem}, Destino: {destino}, Protocolo TCP: {protcp}, {janela}")
+                print (f"Resultados dos pacotes enviados: {target}")
 
     """
         Alguns exemplos de IPs com suas respectivas portas
+        Os Ips abaixo podem ser alterados de acordo com a necessidade do relatório
     """
 
 tcp_scan('192.168.15.7', 80)
